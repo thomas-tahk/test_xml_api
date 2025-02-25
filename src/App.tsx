@@ -13,6 +13,7 @@ function App() {
                     console.log(data)
                     console.log(json)
                 })
+                .catch(err => console.log('Critical Failure:', err))
         },[])
         return (
             <>
@@ -23,6 +24,7 @@ function App() {
 
     return (
         <>
+            <h1>Is this thing working?</h1>
             <FetchXML />
         </>
     )
